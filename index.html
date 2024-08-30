@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.5/axios.min.js" defer></script>
+
+</head>
+
+<body>
+    <h2>Bus Booking</h2>
+    <div class="Filter">
+        <label for="filter" class="Filter">Filter:</label>
+        <select name="filter" id="filter" name="Buses">
+            <option value="All" class="Buses" >All</option>
+            <option value="Bus1" class="Buses" >Bus1</option>
+            <option value="Bus2" class="Buses" >Bus2</option>
+            <option value="Bus3" class="Buses" >Bus3</option>
+        </select>
+    </div>
+    <form id="form" method="post" action="/busbooking">
+        <label for="passenger">Name:</label>
+        <input type="text" id="passenger" name="passenger">
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+        <br>
+        <br>
+        <label for="Busno">Bus Number:</label>
+        <select name="Busno" id="Busno">
+            <option value="Bus1">Bus1</option>
+            <option value="Bus2">Bus2</option>
+            <option value="Bus3">Bus3</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit">Book</button>
+    </form>
+    <ul id="ListItems"></ul>
+
+</body>
+
+
+</html>
